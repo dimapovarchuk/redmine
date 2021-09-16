@@ -24,7 +24,7 @@ pre, code {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;}
   flex-direction: column;
 }
 
-#top-menu {background: #3E5B76; color: #fff; height:1.8em; font-size: 0.8em; padding: 2px 10px 0px 12px;}
+#top-menu {background: #5f763e; color: #fff; height:1.8em; font-size: 0.8em; padding: 2px 10px 0px 12px;}
 #top-menu ul {margin: 0;  padding: 0;}
 #top-menu li {
   float:left;
