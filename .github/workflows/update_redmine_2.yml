@@ -1,8 +1,15 @@
-- name: ls -a via ssh
-  uses: garygrossgarten/github-action-ssh@release
-  with:
-    command: ls -a
-    host: ${{ secrets.HOST2 }}
-    username: garygrossgarten
-    passphrase: ${{ secrets.PASSPHRASE2 }}
-    privateKey: ${{ secrets.PRIVATE_KEY2}}
+name: Update redmine 2
+on: [push, pull_request]
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the upgrade script
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: sudo sh /home/ubuntu/redmine.sh
+          host: ${{ secrets.HOST2 }}
+          username: ubuntu
+          privateKey: ${{ secrets.PRIVATE_KEY2}}
+        env:
+          CI: true
