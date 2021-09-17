@@ -1,8 +1,6 @@
 
 name: Upgrade to new version
 on: 
-  workflow_dispatch: 
-  workflow_run: 
 jobs:
   aboba:
     runs-on: ubuntu-latest
