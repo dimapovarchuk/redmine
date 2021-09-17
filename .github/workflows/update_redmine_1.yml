@@ -1,6 +1,6 @@
 
 name: Upgrade to new version
-on: 
+on: [push, pull_request]
 jobs:
   aboba:
     runs-on: ubuntu-latest
