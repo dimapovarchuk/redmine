@@ -1,5 +1,5 @@
 name: Update redmine 2
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   update:
     runs-on: ubuntu-latest
