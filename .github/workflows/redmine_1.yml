@@ -1,4 +1,4 @@
-name: Update to new version 
+name: Update to new version redmine 1
 on: [push, pull_request]
 jobs:
   update:
@@ -8,8 +8,8 @@ jobs:
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: sudo sh /home/ubuntu/redmine.sh
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.HOST1 }}
           username: ubuntu
-          privateKey: ${{ secrets.PRIVATE_KEY}}
+          privateKey: ${{ secrets.PRIVATE_KEY1}}
         env:
           CI: true
