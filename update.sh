@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo sh /home/ubuntu/redmine.sh
 
 # sudo rm -rf /opt/redmine/{,.}*
 # sudo tar xvf /opt/redmine.tar.gz -C /opt/redmine/
