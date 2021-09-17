@@ -1,14 +1,13 @@
-
-name: Upgrade to new version
+name: Update to new version 
 on: [push, pull_request]
 jobs:
-  aboba:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Run the upgrade script
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: sudo bash /home/ubuntu/example-voting-app/upgrade.sh
+          command: sudo sh /home/ubuntu/redmine.sh
           host: ${{ secrets.HOST }}
           username: ubuntu
           privateKey: ${{ secrets.PRIVATE_KEY}}
