@@ -1,5 +1,9 @@
 name: Update redmine 1
-on: [push, workflow_dispatch]
+on: 
+  workflow_dispatch:
+  push: 
+    paths: 
+      - 'public/**'
 jobs:
   update:
     runs-on: ubuntu-latest
