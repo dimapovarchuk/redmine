@@ -1,4 +1,4 @@
-name: Update to new version redmine 1
+name: Update redmine 1
 on: [push, pull_request]
 jobs:
   update:
