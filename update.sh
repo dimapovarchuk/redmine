@@ -1,6 +1,19 @@
 #!/bin/bash
-sudo sh /home/ubuntu/redmine.sh
+sudo tee /opt/redmine/config/database.yml<<EOF
+production:
+  adapter: mysql2
+  database: redminedb
+  host: 35.180.21.38
+  username: redmineuser
+  password: "P@ssW0rD"
+  # Use "utf8" instead of "utfmb4" for MySQL prior to 5.7.7
+  encoding: utf8mb4
+EOF
+#cd /opt/redmine/ && sudo bundle exec rails server webrick -e production
 
+
+
+# sudo sh /home/ubuntu/redmine.sh
 # sudo rm -rf /opt/redmine/{,.}*
 # sudo tar xvf /opt/redmine.tar.gz -C /opt/redmine/
 # sudo cp /opt/configuration.yml /opt/redmine/config
