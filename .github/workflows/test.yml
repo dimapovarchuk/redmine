@@ -1,4 +1,4 @@
-name: CI
+name: test_CI
 on: [push, pull_request]
 jobs:
   # test:
