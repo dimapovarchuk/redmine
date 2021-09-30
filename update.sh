@@ -3,7 +3,7 @@ sudo tee /opt/redmine/config/database.yml<<EOF
 production:
   adapter: mysql2
   database: redminedb
-  host: 35.180.21.38
+  host: 3.10.117.65
   username: redmineuser
   password: "P@ssW0rD"
   # Use "utf8" instead of "utfmb4" for MySQL prior to 5.7.7
